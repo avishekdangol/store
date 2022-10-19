@@ -22,45 +22,44 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Quarty</title>
+  <title>Avishek Dangol</title>
 </head>
 
 <body>
 
-  <div class="qrt-app">
-    <div class="qrt-preloader">
-      <div class="qrt-preloader-content">
-        <div class="qrt-logo">
-          <img src="img/logo.svg" alt="Quarty">
-        </div>
-        <div id="preloader" class="qrt-preloader-load"></div>
+  <div class="art-app">
+    <!-- preloader -->
+    <div class="art-preloader">
+      <!-- preloader content -->
+      <div class="art-preloader-content">
+        <!-- title -->
+        <img src = "img/light.png" alt="Avishek Dangol written in Nepali">
+        <!-- progressbar -->
+        <div id="preloader" class="art-preloader-load"></div>
       </div>
+      <!-- preloader content end -->
     </div>
-    <div id="cursor" class="qrt-cursor">
+    <!-- preloader end -->
+    <div id="cursor" class="art-cursor">
       <div></div>
-      <div class="qrt-follower"><i class="fas fa-circle-notch"></i></div>
+      <div class="art-follower"><i class="fas fa-circle-notch"></i></div>
     </div>
-    <div class="qrt-top-bar">
-      <a href="home-video.html" class="qrt-symbol qrt-cursor-scale qrt-anima-link"><img src="img/logo-sm.svg" alt="Symbol"></a>
-      <a href="home-video.html" class="qrt-logo qrt-cursor-color qrt-cursor-scale qrt-anima-link">
-        <img src="img/logo.svg" alt="Quarty">
+    <div class="art-top-bar">
+      <a href="home-video.html" class="art-white art-cursor-color art-cursor-scale art-anima-link">
+        <h4>Store</h4>
       </a>
-      <div class="qrt-menu">
-        <div id="qrt-dynamic-menu" class="qrt-dynamic-menu">
+      <div class="art-menu">
+        <div id="art-dynamic-menu" class="art-dynamic-menu">
           <nav>
             <ul>
               <li class="current-menu-item">
-                <a class="qrt-mobile-fix" href="home-video.html">Home</a>
-                <ul>
-                  <li><a href="home-slider.html">Home slider</a></li>
-                  <li><a href="home-video.html">Home video</a></li>
-                  <li><a href="home-image.html">Home image</a></li>
-                  <li><a href="home-combined.html">Home combined</a></li>
-                  <li class="qrt-this-page"><a href="home-classic.html">Home classic</a></li>
-                </ul>
+                <a class="art-mobile-fix" href="index.html">Home</a>
               </li>
               <li>
-                <a class="qrt-mobile-fix" href="about-us.html">About</a>
+                <a href="#" class="art-mobile-fix">Websites</a>
+              </li>
+              <!-- <li>
+                <a class="art-mobile-fix" href="about-us.html">About</a>
                 <ul>
                   <li><a href="about-us.html">About us</a></li>
                   <li><a href="about-me.html">About me</a></li>
@@ -69,7 +68,7 @@
                 </ul>
               </li>
               <li>
-                <a class="qrt-mobile-fix" href="portfolio-fs-masonry-1.html">Portfolio</a>
+                <a class="art-mobile-fix" href="portfolio-fs-masonry-1.html">Portfolio</a>
                 <ul>
                   <li><a href="portfolio-half-masonry-1.html">Half masonry</a></li>
                   <li><a href="portfolio-half-masonry-2.html">Half masonry 2</a></li>
@@ -82,225 +81,180 @@
                   <li><a href="single-work-1.html">Single work 1</a></li>
                   <li><a href="single-work-2.html">Single work 2</a></li>
                 </ul>
-              </li>
+              </li> -->
               <li>
-                <a class="qrt-mobile-fix" href="contact.html">Contact</a>
-                <ul>
-                  <li><a href="contact.html">Contact type 1</a></li>
-                  <li><a href="contact-2.html">Contact type 2</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="qrt-mobile-fix" href="blog-list.html">Blog</a>
-                <ul>
-                  <li><a href="blog-list.html">Blog list</a></li>
-                  <li><a href="publication.html">Publication</a></li>
-                </ul>
+                <a class="art-mobile-fix" href="#">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="qrt-buttons">
-        <a href="contact-2.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-send-request qrt-anima-link qrt-mr-20"><span>Send request</span></a>
-        <div class="qrt-menu-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
-        <div class="qrt-search-btn qrt-cursor-color qrt-cursor-scale"><i class="fas fa-search"></i></div>
-        <div class="qrt-info-btn qrt-cursor-color qrt-cursor-scale"><span></span></div>
+      <div class="art-buttons">
+        <a href="contact-2.html" class="art-btn art-btn-md art-btn-color art-send-request art-anima-link art-mr-20"><span>Send request</span></a>
+        <div class="art-menu-btn art-cursor-color art-cursor-scale"><span></span></div>
+        <div class="art-search-btn art-cursor-color art-cursor-scale"><i class="fas fa-search"></i></div>
+        <div class="art-info-btn art-cursor-color art-cursor-scale"><span></span></div>
       </div>
-      <div class="qrt-search">
+      <div class="art-search">
         <form>
           <input type="text" placeholder="Enter search query">
         </form>
       </div>
-      <div class="qrt-info" id="qrt-scroll-info">
-        <div class="qrt-info-frame">
-          <ul class="qrt-table">
-            <li>
-              <h5>Country</h5><span>Canada</span>
-            </li>
-            <li>
-              <h5>City</h5><span>Toronto</span>
-            </li>
-            <li>
-              <h5>Street</h5><span>North Avenue 31B, </span>
-            </li>
-            <li>
-              <h5>Email</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="mailto:quarty.inbox@mail.com" data-no-swup>quarty.inbox@mail.com</a></span>
-            </li>
-            <li>
-              <h5>Phone</h5><span><a class="qrt-cursor-scale qrt-cursor-color" href="#." data-no-swup>+9 3(049) 482 95 23</a></span>
-            </li>
-          </ul>
-          <div class="qrt-divider"></div>
-          <div class="qrt-social-links">
-            <div class="qrt-social-links">
-              <h5 class="qrt-mb-40">We are social</h5>
-              <ul class="qrt-social-list">
-                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-behance"></i></a></li>
-                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-dribbble"></i></a></li>
-                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#." class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
+      <div class="art-info" id="art-scroll-info">
+        <div class="art-info-frame">
+          <!-- info bar about -->
+          <div class="art-table p-15-15">
+            <!-- about text -->
+            <ul>
+              <!-- country in English -->
+              <li lang="EN">
+                <h6>Residence:</h6><span> Nepal</span>
+              </li>
+
+              <!-- city in English -->
+              <li lang="EN">
+                <h6>City:</h6><span> Kathmandu </span>
+              </li>
+
+              <!-- country in Nepali -->
+              <li lang="NP">
+                <h6>b]zM</h6><span> g]kfn</span>
+              </li>
+              <!-- city in Nepali -->
+              <li lang="NP">
+                <h6>zx/M</h6><span> sf7df8f}+</span>
+              </li>
+            </ul>
+          </div>
+          <!-- info bar about end -->
+          <div class="art-divider"></div>
+          <div class="art-social-links">
+            <div class="art-social-links">
+              <h5 class="art-mb-40">We are social</h5>
+              <ul class="art-social-list">
+                <li><a href="#." class="art-cursor-scale art-cursor-color"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#." class="art-cursor-scale art-cursor-color"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="#." class="art-cursor-scale art-cursor-color"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#." class="art-cursor-scale art-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
             </div>
           </div>
-          <div class="qrt-divider"></div>
-          <div class="qrt-instagram">
-            <h5 class="qrt-mb-40">Instagram</h5>
-            <div class="qrt-instagram-frame">
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+          <div class="art-divider"></div>
+          <div class="art-instagram">
+            <h5 class="art-mb-40">Instagram</h5>
+            <div class="art-instagram-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/7.jpg" alt="instagram post">
                 </div>
               </a>
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/8.jpg" alt="instagram post">
                 </div>
               </a>
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/9.jpg" alt="instagram post">
                 </div>
               </a>
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/10.jpg" alt="instagram post">
                 </div>
               </a>
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/11.jpg" alt="instagram post">
                 </div>
               </a>
-              <a href="#." class="qrt-instagram-item qrt-cursor-scale">
-                <div class="qrt-instagram-image-frame">
+              <a href="#." class="art-instagram-item art-cursor-scale">
+                <div class="art-instagram-image-frame">
                   <img src="img/projects/thumbnails/12.jpg" alt="instagram post">
                 </div>
               </a>
             </div>
-          </div>
-          <div class="qrt-divider"></div>
-          <h5 class="qrt-mb-40">Latest Publications</h5>
-          <div class="qrt-post-frame qrt-sm-post">
-            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-              <img src="img/blog/1.jpg" alt="thumbnail">
-            </a>
-            <div class="qrt-post-descr">
-              <div>
-                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Architecture of Observation Towers</a></h4>
-                <div class="qrt-port-short-text">It seems to be human nature to enjoy a view, getting the higher ground and taking in our surroundings has become a significant aspect of architecture across the world. Observation towers which allow
-                  visitors to climb and observe their surroundings, provide a chance to take in the beauty of the land while at the same time adding something unique and impressive to the landscape.</div>
-              </div>
+          </div>         
+          
+          <div class="art-copy">
+            <div>
+              <span lang="EN">© 2022 Avishek Dangol</span>
+              <span class="copy" lang="NP"><span class="english">©</span> @)&* cleif]s 8+uf]n</span>
             </div>
-          </div>
-          <div class="qrt-post-frame qrt-sm-post">
-            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-              <img src="img/blog/2.jpg" alt="thumbnail">
-            </a>
-            <div class="qrt-post-descr">
-              <div>
-                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Model Making In Architecture</a></h4>
-                <div class="qrt-port-short-text">The importance of model making in architecture could be thought to have reduced in recent years. With the introduction of new and innovative architecture design technology, is there still a place for
-                  model making in architecture? Stanton Williams, director at Stirling Prize-winning practice, Gavin Henderson, believes that it’s more important than ever.</div>
-              </div>
-            </div>
-          </div>
-          <div class="qrt-post-frame qrt-sm-post">
-            <a href="publication.html" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
-              <img src="img/blog/5.jpg" alt="thumbnail">
-            </a>
-            <div class="qrt-post-descr">
-              <div>
-                <h4 class="qrt-cursor-color qrt-post-title"><a href="publication.html" class="qrt-anima-link">Can Skyscrapers Be Sustainable</a></h4>
-                <div class="qrt-port-short-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, id, reprehenderit earum quidem error hic deserunt asperiores suscipit. Magni doloribus, ab cumque modi quidem doloremque nostrum quam
-                  tempora, corporis explicabo nesciunt accusamus ad architecto sint voluptatibus tenetur ipsa hic eius.</div>
-              </div>
-            </div>
-          </div>
-          <div class="qrt-divider"></div>
-          <div class="qrt-subscribe">
-            <h5 class="qrt-mb-40">Subscribe our newsletter</h5>
-            <form>
-              <input type="text" placeholder="Email">
-              <button type="submit" class="qrt-btn qrt-btn-sm"><i class="far fa-paper-plane"></i></button>
-            </form>
-          </div>
-          <div class="qrt-divider"></div>
-          <div class="qrt-copy">
-            <!-- author ( Please! Do not delete it. You are awesome! :) -->
-            <div>© Late 2020 Quarty.<br>Design by:&#160; <a class="qrt-cursor-scale qrt-cursor-color" href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div>
+
+            <div>MVP Studio</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="qrt-left-bar">
-      <div class="qrt-current-page-title"></div>
-      <div class="qrt-change-language">
-        <a href="#." class="qrt-leng qrt-cursor-color qrt-cursor-scale">fr</a>
-        <a href="#." class="qrt-leng qrt-active">En</a>
+    <div class="art-left-bar">
+      <div class="art-current-page-title"></div>
+      <div class="art-change-language">
+        <a href="#." class="art-leng art-cursor-color art-cursor-scale">NP</a>
+        <a href="#." class="art-leng art-active">EN</a>
       </div>
     </div>
-    <div class="qrt-curtain"></div>
-    <div id="qrt-dynamic-content" class="qrt-dynamic-content">
-      <div class="qrt-content" id="qrt-scroll-content">
-        <div class="swiper-container qrt-main-slider-onepage">
-          <div class="qrt-slider-pagination">
+    <div class="art-curtain"></div>
+    <div id="art-dynamic-content" class="art-dynamic-content">
+      <div class="art-content" id="art-scroll-content">
+        <div class="swiper-container art-main-slider-onepage">
+          <div class="art-slider-pagination">
             <div class="swiper-pagination swiper-main-pagination"></div>
           </div>
-          <div class="qrt-slider-navigation qrt-absolute">
-            <div class="qrt-slider-nav-btn qrt-main-prev qrt-cursor-scale qrt-cursor-color"><i class="fas fa-arrow-left"></i><span>prev</span></div>
-            <div class="qrt-slider-nav-btn qrt-main-next qrt-cursor-scale qrt-cursor-color"><span>next</span><i class="fas fa-arrow-right"></i></div>
+          <div class="art-slider-navigation art-absolute">
+            <div class="art-slider-nav-btn art-main-prev art-cursor-scale art-cursor-color"><i class="fas fa-arrow-left"></i><span>prev</span></div>
+            <div class="art-slider-nav-btn art-main-next art-cursor-scale art-cursor-color"><span>next</span><i class="fas fa-arrow-right"></i></div>
           </div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
+              <div class="art-project-cover">
+                <div class="art-image-frame">
                   <img class="" src="img/projects/original-size/1.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4">
                 </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">Architecture - <br> petrified music</h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
+                <div class="art-overlay">
+                  <div class="art-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
+                    <div class="art-banner-title">
+                      <h1 class="art-white art-mb-30">Architecture - <br> petrified music</h1>
+                      <div class="art-divider-2"></div>
+                      <div class="art-text art-white art-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
+                      <a href="about-us.html" class="art-btn art-btn-md art-btn-color art-cursor-scale art-anima-link art-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
+                      <a href="contact.html" class="art-btn art-btn-md art-btn-border art-cursor-scale art-anima-link art-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
+              <div class="art-project-cover">
+                <div class="art-image-frame">
                   <img class="" src="img/projects/original-size/3.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4">
                 </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">Architecture is <br>about creating order</h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
+                <div class="art-overlay">
+                  <div class="art-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
+                    <div class="art-banner-title">
+                      <h1 class="art-white art-mb-30">Architecture is <br>about creating order</h1>
+                      <div class="art-divider-2"></div>
+                      <div class="art-text art-white art-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
+                      <a href="about-us.html" class="art-btn art-btn-md art-btn-color art-cursor-scale art-anima-link art-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
+                      <a href="contact.html" class="art-btn art-btn-md art-btn-border art-cursor-scale art-anima-link art-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="qrt-project-cover">
-                <div class="qrt-image-frame">
+              <div class="art-project-cover">
+                <div class="art-image-frame">
                   <img class="" src="img/projects/original-size/2.jpg" alt="project cover" data-swiper-parallax="400" data-swiper-parallax-scale="1.4">
                 </div>
-                <div class="qrt-overlay">
-                  <div class="qrt-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
-                    <div class="qrt-banner-title">
-                      <h1 class="qrt-white qrt-mb-30">Our knowledge <br>is your property</h1>
-                      <div class="qrt-divider-2"></div>
-                      <div class="qrt-text qrt-white qrt-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
-                      <a href="about-us.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
-                      <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-border qrt-cursor-scale qrt-anima-link qrt-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
+                <div class="art-overlay">
+                  <div class="art-parallax-fix" data-swiper-parallax-x="-400" data-swiper-parallax-duration="1000">
+                    <div class="art-banner-title">
+                      <h1 class="art-white art-mb-30">Our knowledge <br>is your property</h1>
+                      <div class="art-divider-2"></div>
+                      <div class="art-text art-white art-mb-20">Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</div>
+                      <a href="about-us.html" class="art-btn art-btn-md art-btn-color art-cursor-scale art-anima-link art-mb-20"><span>Explore now</span><i class="fas fa-arrow-right"></i></a>
+                      <a href="contact.html" class="art-btn art-btn-md art-btn-border art-cursor-scale art-anima-link art-mb-20"><span>Contact</span><i class="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -309,16 +263,16 @@
           </div>
         </div>
 
-        <div class="qrt-content-frame">
+        <div class="art-content-frame">
 
-          <div class="qrt-left">
+          <div class="art-left">
             <div class="row">
               <div class="col-lg-4">
 
-                <h3 class="qrt-mb-40">We are creative <br>building - design company</h3>
+                <h3 class="art-mb-40">We are creative <br>building - design company</h3>
 
               </div>
-              <div class="col-lg-8 qrt-mb-25">
+              <div class="col-lg-8 art-mb-25">
 
                 <p>We have intentionally never developed a stylistic formula for our work, which is why our projects never quite look or feel the same. Each of our spaces is the result of our ability to listen, which has turned our designs and
                   buildings into personal reflections of our clients’ personalities and values, which we co-construct through research, workshops and surveys.</p>
@@ -336,14 +290,14 @@
               </div>
             </div>
 
-            <div class="qrt-divider"></div>
+            <div class="art-divider"></div>
 
             <div class="row">
               <div class="col-lg-3 col-sm-6">
 
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">10</span>
+                <div class="art-counter-frame">
+                  <div class="art-counter-box">
+                    <span class="art-counter">10</span>
                   </div>
                   <h5>Years Experience</h5>
                 </div>
@@ -351,9 +305,9 @@
               </div>
               <div class="col-lg-3 col-sm-6">
 
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">143</span>
+                <div class="art-counter-frame">
+                  <div class="art-counter-box">
+                    <span class="art-counter">143</span>
                   </div>
                   <h5>Completed Projects</h5>
                 </div>
@@ -361,9 +315,9 @@
               </div>
               <div class="col-lg-3 col-sm-6">
 
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">114</span>
+                <div class="art-counter-frame">
+                  <div class="art-counter-box">
+                    <span class="art-counter">114</span>
                   </div>
                   <h5>Happy Customers</h5>
                 </div>
@@ -371,9 +325,9 @@
               </div>
               <div class="col-lg-3 col-sm-6">
 
-                <div class="qrt-counter-frame">
-                  <div class="qrt-counter-box">
-                    <span class="qrt-counter">20</span>
+                <div class="art-counter-frame">
+                  <div class="art-counter-box">
+                    <span class="art-counter">20</span>
                   </div>
                   <h5>Honors and Awards</h5>
                 </div>
@@ -381,125 +335,125 @@
               </div>
             </div>
 
-            <div class="qrt-divider qrt-space-fix"></div>
+            <div class="art-divider art-space-fix"></div>
 
             <div class="row">
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-40">Our team</h3>
+                <h3 class="art-mb-40">Our team</h3>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                <div class="art-team-member">
+                  <a href="about-me.html" class="art-cursor-scale art-team-item art-anima-link">
                     <img src="img/team/tm1.jpg" alt="team member">
                   </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Viktoria Freeman</h4>
+                  <div class="art-team-member-description">
+                    <div class="art-member-name">
+                      <h4 class="art-white art-art-mb-5">Viktoria Freeman</h4>
                       <span>Chief Architect</span>
                     </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    <a href="about-me.html" class="art-cursor-scale art-member-more art-anima-link"><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                <div class="art-team-member">
+                  <a href="about-me.html" class="art-cursor-scale art-team-item art-anima-link">
                     <img src="img/team/tm2.jpg" alt="team member">
                   </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Paul trueman</h4>
+                  <div class="art-team-member-description">
+                    <div class="art-member-name">
+                      <h4 class="art-white art-art-mb-5">Paul trueman</h4>
                       <span>Chief Architect</span>
                     </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    <a href="about-me.html" class="art-cursor-scale art-member-more art-anima-link"><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                <div class="art-team-member">
+                  <a href="about-me.html" class="art-cursor-scale art-team-item art-anima-link">
                     <img src="img/team/tm3.jpg" alt="team member">
                   </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Emma Newman</h4>
+                  <div class="art-team-member-description">
+                    <div class="art-member-name">
+                      <h4 class="art-white art-art-mb-5">Emma Newman</h4>
                       <span>Chief Architect</span>
                     </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    <a href="about-me.html" class="art-cursor-scale art-member-more art-anima-link"><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-team-member">
-                  <a href="about-me.html" class="qrt-cursor-scale qrt-team-item qrt-anima-link">
+                <div class="art-team-member">
+                  <a href="about-me.html" class="art-cursor-scale art-team-item art-anima-link">
                     <img src="img/team/tm4.jpg" alt="team member">
                   </a>
-                  <div class="qrt-team-member-description">
-                    <div class="qrt-member-name">
-                      <h4 class="qrt-white qrt-qrt-mb-5">Anna Oldman</h4>
+                  <div class="art-team-member-description">
+                    <div class="art-member-name">
+                      <h4 class="art-white art-art-mb-5">Anna Oldman</h4>
                       <span>Chief Architect</span>
                     </div>
-                    <a href="about-me.html" class="qrt-cursor-scale qrt-member-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+                    <a href="about-me.html" class="art-cursor-scale art-member-more art-anima-link"><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
             </div>
 
-            <div class="qrt-divider qrt-space-fix"></div>
+            <div class="art-divider art-space-fix"></div>
 
             <div class="row">
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-40">Prices</h3>
+                <h3 class="art-mb-40">Prices</h3>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Starter Price</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number">FREE<sup>*</sup></div>
+                <div class="art-a art-price">
+                  <div class="art-price-body">
+                    <h5 class="art-mb-20">Starter Price</h5>
+                    <div class="art-price-cost">
+                      <div class="art-number">FREE<sup>*</sup></div>
                     </div>
-                    <ul class="qrt-price-list">
+                    <ul class="art-price-list">
                       <li>Ui Design</li>
                       <li>Web Development</li>
-                      <li class="qrt-empty-item">Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
+                      <li class="art-empty-item">Logo design</li>
+                      <li class="art-empty-item">SEO optimization</li>
+                      <li class="art-empty-item">Wordpress integration</li>
                     </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
-                    <div class="qrt-asterisk"><sup>*</sup>Free only when ordering paid services</div>
+                    <a class="art-btn art-btn-md art-cursor-scale art-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                    <div class="art-asterisk"><sup>*</sup>Free only when ordering paid services</div>
                   </div>
                 </div>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-a qrt-price qrt-popular-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Hourly payment</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number"><span>$</span>29<span>h</span></div>
+                <div class="art-a art-price art-popular-price">
+                  <div class="art-price-body">
+                    <h5 class="art-mb-20">Hourly payment</h5>
+                    <div class="art-price-cost">
+                      <div class="art-number"><span>$</span>29<span>h</span></div>
                     </div>
-                    <ul class="qrt-price-list">
+                    <ul class="art-price-list">
                       <li>Ui Design</li>
                       <li>Web Development</li>
                       <li>Logo design</li>
-                      <li class="qrt-empty-item">SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
+                      <li class="art-empty-item">SEO optimization</li>
+                      <li class="art-empty-item">Wordpress integration</li>
                     </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                    <a class="art-btn art-btn-md art-btn-color art-cursor-scale art-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
                   </div>
 
                 </div>
@@ -507,73 +461,73 @@
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Part time</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number"><span>$</span>1999<span>m</span></div>
+                <div class="art-a art-price">
+                  <div class="art-price-body">
+                    <h5 class="art-mb-20">Part time</h5>
+                    <div class="art-price-cost">
+                      <div class="art-number"><span>$</span>1999<span>m</span></div>
                     </div>
-                    <ul class="qrt-price-list">
+                    <ul class="art-price-list">
                       <li>Ui Design</li>
                       <li>Web Development</li>
                       <li>Logo design</li>
                       <li>SEO optimization</li>
-                      <li class="qrt-empty-item">Wordpress integration</li>
+                      <li class="art-empty-item">Wordpress integration</li>
                     </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                    <a class="art-btn art-btn-md art-cursor-scale art-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
               <div class="col-lg-3">
 
-                <div class="qrt-a qrt-price">
-                  <div class="qrt-price-body">
-                    <h5 class="qrt-mb-20">Full time</h5>
-                    <div class="qrt-price-cost">
-                      <div class="qrt-number"><span>$</span>2999<span>m</span></div>
+                <div class="art-a art-price">
+                  <div class="art-price-body">
+                    <h5 class="art-mb-20">Full time</h5>
+                    <div class="art-price-cost">
+                      <div class="art-number"><span>$</span>2999<span>m</span></div>
                     </div>
-                    <ul class="qrt-price-list">
+                    <ul class="art-price-list">
                       <li>Ui Design</li>
                       <li>Web Development</li>
                       <li>Logo design</li>
                       <li>SEO optimization</li>
                       <li>Wordpress integration</li>
                     </ul>
-                    <a class="qrt-btn qrt-btn-md qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
+                    <a class="art-btn art-btn-md art-cursor-scale art-anima-link" href="contact.html"><span>Order now</span><i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
 
               </div>
             </div>
 
-            <div class="qrt-divider qrt-space-fix"></div>
+            <div class="art-divider art-space-fix"></div>
 
             <div class="row">
               <div class="col-lg-12">
 
-                <h3 class="qrt-mb-40">Testimonials</h3>
+                <h3 class="art-mb-40">Testimonials</h3>
 
               </div>
               <div class="col-lg-12">
 
-                <div class="swiper-container qrt-testimonials-slider" style="overflow: visible">
+                <div class="swiper-container art-testimonials-slider" style="overflow: visible">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
+                      <div class="art-testimonial">
+                        <div class="art-testimonial-header">
                           <img src="img/testimonials/t1.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Paul Trueman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          <div class="art-testimonial-name">
+                            <h4 class="art-mb-5">Paul Trueman</h4>
+                            <div class="art-el-suptitle">Chief Architect</div>
                           </div>
                         </div>
-                        <div class="qrt-testimonial-text">
+                        <div class="art-testimonial-text">
                           We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
                           were also
                           indispensable in managing the practical side of the build.
                         </div>
-                        <ul class="qrt-stars">
+                        <ul class="art-stars">
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
@@ -583,19 +537,19 @@
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
+                      <div class="art-testimonial">
+                        <div class="art-testimonial-header">
                           <img src="img/testimonials/t2.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Emma Newman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          <div class="art-testimonial-name">
+                            <h4 class="art-mb-5">Emma Newman</h4>
+                            <div class="art-el-suptitle">Chief Architect</div>
                           </div>
                         </div>
-                        <div class="qrt-testimonial-text">
+                        <div class="art-testimonial-text">
                           We engaged Paul Trueman of quarty Studio to manage the planning process and to design and manage a full renovation and remodelling of our 1930s house. We really enjoyed working with Paul. We would not hesitate to
                           recommend Paul and Quarty.
                         </div>
-                        <ul class="qrt-stars">
+                        <ul class="art-stars">
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
@@ -605,25 +559,25 @@
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="qrt-testimonial">
-                        <div class="qrt-testimonial-header">
+                      <div class="art-testimonial">
+                        <div class="art-testimonial-header">
                           <img src="img/testimonials/t3.jpg" alt="customer">
-                          <div class="qrt-testimonial-name">
-                            <h4 class="qrt-mb-5">Viktoria freeman</h4>
-                            <div class="qrt-el-suptitle">Chief Architect</div>
+                          <div class="art-testimonial-name">
+                            <h4 class="art-mb-5">Viktoria freeman</h4>
+                            <div class="art-el-suptitle">Chief Architect</div>
                           </div>
                         </div>
-                        <div class="qrt-testimonial-text">
+                        <div class="art-testimonial-text">
                           We worked with Quarty Studio for approximately 2 years on the complete overhaul of our house. This included the design of the project, and the execution of the work. Quarty provided excellent design ideas but
                           were also
                           indispensable in managing the practical side of the build.
                         </div>
-                        <ul class="qrt-stars">
+                        <ul class="art-stars">
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
                           <li><i class="fas fa-star"></i></li>
-                          <li class="qrt-empty"><i class="fas fa-star"></i></li>
+                          <li class="art-empty"><i class="fas fa-star"></i></li>
                         </ul>
                       </div>
                     </div>
@@ -633,16 +587,16 @@
               </div>
               <div class="col-6">
 
-                <div class="swiper-testi-pagination qrt-cursor-color qrt-cursor-scale"></div>
+                <div class="swiper-testi-pagination art-cursor-color art-cursor-scale"></div>
 
               </div>
               <div class="col-6">
 
-                <div class="qrt-slider-nav">
+                <div class="art-slider-nav">
                   <!-- prev -->
-                  <div class="qrt-slider-prev qrt-testi-prev qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-left"></i></div>
+                  <div class="art-slider-prev art-testi-prev art-cursor-color art-cursor-scale"><i class="fas fa-arrow-left"></i></div>
                   <!-- next -->
-                  <div class="qrt-slider-next qrt-testi-next qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-right"></i></div>
+                  <div class="art-slider-next art-testi-next art-cursor-color art-cursor-scale"><i class="fas fa-arrow-right"></i></div>
                 </div>
 
               </div>
@@ -650,12 +604,12 @@
 
             </div>
 
-            <div class="qrt-divider"></div>
+            <div class="art-divider"></div>
 
             <div class="row">
               <div class="col-lg-12">
 
-                <div class="swiper-container qrt-brands-slider" style="overflow: visible">
+                <div class="swiper-container art-brands-slider" style="overflow: visible">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="img/brands/b1.svg" alt="brand">
@@ -686,16 +640,16 @@
             <div class="row">
               <div class="col-lg-12">
 
-                <div class="qrt-call-to-action">
+                <div class="art-call-to-action">
                   <h4>Do you have a project?</h4>
-                  <a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+                  <a class="art-btn art-btn-sm art-btn-color art-cursor-scale art-anima-link" href="contact.html"><span>Let's discuss</span></a>
                 </div>
 
               </div>
             </div>
 
           </div>
-          <div id="fixed" class="qrt-right">
+          <div id="fixed" class="art-right">
           </div>
         </div>
       </div>
