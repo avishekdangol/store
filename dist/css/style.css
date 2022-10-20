@@ -72,6 +72,7 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
       - swiper
       - fancybox
       - mapbox
+8. card
 --------------------------------------------*/
 /* ------------------------------
 
@@ -79,7 +80,9 @@ common
 
 ------------------------------ */
 /* ----- fonts ----- */
-@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 /* ----- variables ----- */
 /* ----- text defaults ----- */
 *,
@@ -93,10 +96,10 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: rgb(82, 85, 90);
+  color: #e6e6e6;
 }
 
 a,
@@ -133,9 +136,9 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  color: rgb(40, 41, 44);
+  color: #e6e6e6;
   margin: 0;
-  font-family: "Commissioner", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h1 a,
 h2 a,
@@ -143,7 +146,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: rgb(40, 41, 44);
+  color: #e6e6e6;
 }
 h1 a:hover,
 h2 a:hover,
@@ -188,7 +191,7 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 10px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .art-just-text {
@@ -225,7 +228,7 @@ blockquote:before {
   content: "\f10d";
   font-size: 16px;
   opacity: 0.5;
-  color: #fff;
+  color: #999;
   top: 13px;
   left: 13px;
 }
@@ -236,7 +239,7 @@ blockquote:after {
   content: "\f10d";
   font-size: 16px;
   opacity: 0.5;
-  color: #fff;
+  color: #999;
   bottom: 13px;
   right: 13px;
   transform: rotate(180deg);
@@ -802,8 +805,9 @@ body {
   right: 0;
   width: 350px;
   height: calc(100vh - 100px);
-  background-color: rgb(247, 248, 248);
+  background-color: rgb(40, 41, 44);
   box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
+  color: #e6e6e6;
   z-index: -1;
   transform: translateZ(-1px) translateX(100%);
   transition: 0.4s ease-in-out;
@@ -866,12 +870,13 @@ body {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 10px;
-  padding-left: 2px;
-  padding-top: 2px;
-  font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 2px;
+  /* padding-left: 2px;
+  padding-top: 2px; */
+  font-family: "Poppins", sans-serif;
+  /* letter-spacing: 2px; */
   font-weight: 800;
   border-radius: 50%;
+  background-color: rgb(30, 30, 30);
   color: rgb(247, 248, 248);
   transition: 0.4s ease-in-out;
   display: flex;
@@ -1881,7 +1886,7 @@ content
   font-size: 22px;
   font-weight: 800;
   margin-bottom: 10px;
-  color: rgb(40, 41, 44);
+  color: #e6e6e6;
 }
 
 /* ----- team ----- */
@@ -1914,8 +1919,10 @@ content
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(40, 41, 44);
-  padding: 15px 20px;
+  -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  padding: 24px 20px;
 }
 .art-team-member .art-team-member-description .art-member-more {
   background-color: rgb(255, 213, 79);
@@ -1926,103 +1933,6 @@ content
   justify-content: center;
   align-items: center;
   color: rgb(40, 41, 44);
-}
-
-/* ----- prices ----- */
-.art-price {
-  overflow: hidden;
-  position: relative;
-  background-size: cover;
-  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
-  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-          box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
-  text-align: center;
-  box-shadow: 0 1px 2px 0 rgba(45, 45, 60, 0.1);
-  margin-bottom: 40px;
-  transition: 0.4s ease-in-out;
-}
-.art-price.art-popular-price {
-  transform: scale(1.03);
-}
-.art-price.art-popular-price:before {
-  font-size: 9px;
-  position: absolute;
-  transform: rotate(45deg);
-  z-index: 99;
-  top: 15px;
-  font-weight: 600;
-  color: rgb(40, 41, 44);
-  right: -78px;
-  content: "POPULAR";
-  padding: 2px 0 1px;
-  width: 200px;
-  text-align: center;
-  background: rgb(255, 213, 79);
-}
-.art-price .art-price-body {
-  position: relative;
-  padding: 20px;
-}
-.art-price .art-price-body .art-asterisk {
-  position: absolute;
-  width: 100%;
-  bottom: 4px;
-  left: 0;
-  text-align: center;
-  font-size: 8px;
-  opacity: 0.4;
-}
-.art-price .art-price-body .art-price-cost {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-.art-price .art-price-body .art-price-cost .art-number {
-  font-size: 36px;
-  color: rgb(40, 41, 44);
-  font-weight: 800;
-  margin-bottom: 0;
-}
-.art-price .art-price-body .art-price-cost .art-number span {
-  color: rgb(40, 41, 44);
-  font-size: 12px;
-  padding: 0 5px;
-  opacity: 0.6;
-}
-.art-price .art-price-body .art-price-cost .art-number sup {
-  font-size: 18px;
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-.art-price .art-price-body .art-price-list {
-  padding: 0;
-  margin: 0 0 30px;
-}
-.art-price .art-price-body .art-price-list li {
-  list-style-type: none;
-  margin-bottom: 15px;
-}
-.art-price .art-price-body .art-price-list li:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c";
-  margin-right: 5px;
-  font-size: 9px;
-  color: rgb(255, 213, 79);
-}
-.art-price .art-price-body .art-price-list li.art-empty-item {
-  opacity: 0.3;
-}
-.art-price .art-price-body .art-price-list li.art-empty-item:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00d";
-  margin-right: 5px;
-  font-size: 9px;
-  color: rgb(255, 213, 79);
 }
 
 /* ----- timeline ----- */
@@ -2159,7 +2069,9 @@ content
 /* ----- call to action ----- */
 .art-call-to-action {
   padding: 20px 40px;
-  background-color: rgb(40, 41, 44);
+  -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   display: flex;
   height: 80px;
   align-items: center;
@@ -2524,7 +2436,7 @@ content
 }
 .art-table li span {
   transform: translateY(-1px);
-  color: rgb(82, 85, 90);
+  color: #e6e6e6;
 }
 .art-table li a {
   color: rgb(82, 85, 90);
@@ -2532,40 +2444,6 @@ content
 }
 .art-table li a:hover {
   color: rgb(40, 41, 44);
-}
-
-/* ----- instagram ----- */
-.art-instagram .art-instagram-frame {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -5px;
-  position: relative;
-  overflow: hidden;
-}
-.art-instagram .art-instagram-frame .art-instagram-item {
-  position: relative;
-  width: 33.333333%;
-  padding: 0 5px;
-  margin-bottom: 10px;
-  transition: 0.4s ease-in-out;
-}
-.art-instagram .art-instagram-frame .art-instagram-item .art-instagram-image-frame {
-  position: relative;
-  padding-bottom: 100%;
-  filter: brightness(90%);
-  transition: 0.4s ease-in-out;
-}
-.art-instagram .art-instagram-frame .art-instagram-item .art-instagram-image-frame img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.art-instagram .art-instagram-frame .art-instagram-item .art-instagram-image-frame:hover {
-  filter: brightness(120%);
 }
 
 /* ----- social links ----- */
@@ -2586,7 +2464,7 @@ content
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(40, 41, 44);
+  color: #e6e6e6;
   font-size: 12px;
   height: 35px;
   width: 35px;
@@ -2634,11 +2512,20 @@ content
 }
 
 /* ----- copyright ----- */
-.art-copy {
-  position: fixed;
-  bottom: 0;
+.art-copy-frame {
   display: flex;
   justify-content: space-between;
+}
+.art-info .scroll-content {
+  height: 100%;
+  position: relative;
+}
+.art-copy {
+  width: 100%;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: 12px;
 }
 .art-copy a {
@@ -3219,4 +3106,14 @@ plugins customization
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* ----- card ----- */
+.art-card {
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+}
