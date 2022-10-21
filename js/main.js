@@ -11,9 +11,82 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 $(function() {
 
+  // active menu in startup
+  const menu = document.querySelectorAll('.menu-item');
+
+  menu.forEach(function(item) {
+    const url = window.location.href.split("/").pop().split(".")[0];
+    let page = url.charAt(0).toUpperCase() + url.slice(1);
+    if (page == 'Index' || window.location.href.split("/").pop() == '' || window.location.href.split("/").pop() == '<empty string>') page = 'Home';
+
+    if (item.textContent == page) item.classList.add('current-menu-item');
+  });
+
+  // Left Bar Menu
+  $('.art-info-bar-btn').on('click', function() {
+    $('.art-info-bar').toggleClass('art-active');
+    $('.art-menu-bar-btn').toggleClass('art-disabled');
+  });
+
+  $('.art-menu-bar-btn').on('click', function() {
+    $('.art-menu-bar-btn , .art-menu-bar').toggleClass("art-active");
+    $('.art-info-bar-btn').toggleClass('art-disabled');
+  });
+
+  $('.art-info-bar-btn , .art-menu-bar-btn').on('click', function() {
+    $('.art-content').toggleClass('art-active');
+  });
+
+  $('.art-curtain , .art-mobile-top-bar').on('click', function() {
+    $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-menu-bar-btn , .art-info-bar-btn').removeClass('art-active , art-disabled');
+  });
+
+  $('.menu-item').on('click', function() {
+    if ($(this).hasClass('menu-item-has-children')) {
+      $(this).children('.sub-menu').toggleClass('art-active');
+    } else {
+      $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-menu-bar-btn , .art-info-bar-btn').removeClass('art-active , art-disabled');
+    }
+  });
+
+  function lang() {
+    const currentLangElement = $('.art-active-lang');
+
+    // hides all the other languages except the current language
+    $(currentLangElement).siblings().each(function(index, sibling) {
+      $('[lang="' + $(sibling).text() + '"]').hide();
+    })
+
+    $('[lang="' + $(currentLangElement).text() + '"]').show();    
+  }
+
+  $('.art-lang').click(function(e) {
+    const currentLang = $('.art-active-lang').text();
+    const target = e.currentTarget;
+
+    // if the clicked language is the current language, return
+    if (currentLang == target.textContent) 
+      return; 
+
+    // remove the active class from previous active language
+    $(target).siblings().each(function(index, sibling) {
+      sibling.classList.remove("art-active-lang");
+    })
+
+    // set the clicked language as active language
+    target.classList.add("art-active-lang");
+
+    // toggle the language
+    $('[lang="NP"]').toggle();
+    $('[lang="EN"]').toggle();
+
+  })
+
   "use strict";
 
   $(document).ready(function() {
+    lang();
+
     $('html').addClass('is-animating');
     anime({
       targets: '.art-preloader .art-preloader-content',
@@ -36,39 +109,7 @@ $(function() {
         $('html').removeClass('is-animating');
       }
     });
-    const currentLangElement = $('.art-active');
-
-    // hides all the other languages except the current language
-    $(currentLangElement).siblings().each(function(index, sibling) {
-      $('[lang="' + $(sibling).text() + '"]').hide();
-    })
-
-    $('[lang="' + $(currentLangElement).text() + '"]').show();  
   });
-
-  // Initial Language and Toggle Language
-
-  $('.art-leng').click(function(e) {
-    const currentLang = $('.art-active').text();
-    const target = e.currentTarget;
-
-    // if the clicked language is the current language, return
-    if (currentLang == target.textContent) 
-	return; 
-
-    // remove the active class from previous active language
-    $(target).siblings().each(function(index, sibling) {
-	sibling.classList.remove("art-active");
-    })
-
-    // set the clicked language as active language
-    target.classList.add("art-active");
-
-    // toggle the language
-    $('[lang="NP"]').toggle();
-    $('[lang="EN"]').toggle();
-
-  })
 
   var bar = new ProgressBar.Line(preloader, {
     strokeWidth: 1.7,
@@ -431,7 +472,7 @@ $(function() {
   $(document).on('click', function(e) {
     var el = '.art-menu , .art-menu-btn';
     if (jQuery(e.target).closest(el).length) return;
-    $('.art-menu , .art-menu-btn').removeClass('art-active');
+    $('.art-menu, .art-menu-bar .art-menu-btn').removeClass('art-active');
   });
 
   $('.art-search-btn').on('click', function() {
@@ -446,7 +487,8 @@ $(function() {
     $('.art-search , .art-search-btn').removeClass('art-active');
   });
 
-  $('.current-menu-item a').clone().prependTo('.art-current-page-title');
+  $('.current-menu-item a').clone().prependTo('.art-current-page');
+  console.log($('.art-current-page'))
 
   anime({
     targets: '.art-follower',
@@ -534,6 +576,15 @@ $(function() {
 
   // reinit
   document.addEventListener("swup:contentReplaced", function() {
+    const menu = document.querySelectorAll('.menu-item');
+
+    const url = window.location.href.split("/").pop().split(".")[0];
+    let page = url.charAt(0).toUpperCase() + url.slice(1);
+    if (page == 'Index' || window.location.href.split("/").pop() == '' || window.location.href.split("/").pop() == '<empty string>') page = 'Home';
+
+    menu.forEach(function(item) {
+      if (item.textContent == page) item.classList.add('current-menu-item');
+    });
 
     Scrollbar.use(OverscrollPlugin);
     var scrollbar = Scrollbar.init(document.querySelector('#art-scroll-content'), {
@@ -801,84 +852,6 @@ $(function() {
       $('.art-lock .fas').toggleClass('fa-unlock');
     });
 
-    $(".art-menu nav ul li a").on('click', function() {
-      if ($(this).hasClass("art-mobile-fix")) {
-        $('.art-menu , .art-menu-btn').addClass('art-active');
-      } else {
-        $('.art-menu , .art-menu-btn').removeClass('art-active');
-      }
-    });
-
-    $('.current-menu-item a').clone().prependTo('.art-current-page-title');
-
-    anime({
-      targets: '.art-follower',
-      scale: 0,
-    });
-
-    $(".art-menu nav ul li a").mouseover(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 1,
-        background: 'rgba(222,225,230,1)',
-      });
-    });
-    $(".art-menu nav ul li a").mouseout(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 0,
-        background: '#fff',
-      });
-    });
-
-    $(".art-menu nav ul li ul li a").mouseover(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 1,
-        background: '#fff',
-      });
-    });
-    $(".art-menu nav ul li ul li a").mouseout(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 0,
-        background: '#fff',
-      });
-    });
-
-    $(".art-cursor-scale").mouseover(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 1,
-      });
-    });
-    $(".art-cursor-scale").mouseout(function() {
-      anime({
-        targets: '.art-follower',
-        scale: 0,
-      });
-    });
-
-    $(".art-cursor-color").mouseover(function() {
-      anime({
-        targets: '.art-follower',
-        background: 'rgba(222,225,230,1)',
-      });
-    });
-    $(".art-cursor-color").mouseout(function() {
-      anime({
-        targets: '.art-follower',
-        background: '#fff',
-      });
-    });
-
-    $('.art-input').keyup(function() {
-      if ($(this).val()) {
-        $(this).addClass('art-active');
-      } else {
-        $(this).removeClass('art-active');
-      }
-    });
     if ($("div").is("#map")) {
       mapboxgl.accessToken = 'pk.eyJ1Ijoic3Rvc2NhciIsImEiOiJja2VpbDE4b2UwbDg3MnNwY2d3YzlvcDV5In0.e26tLedpKwxrkOmPkWhQlg';
       var map = new mapboxgl.Map({
