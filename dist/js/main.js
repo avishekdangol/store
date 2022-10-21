@@ -577,13 +577,13 @@ $(function() {
   document.addEventListener("swup:contentReplaced", function() {
     const menu = document.querySelectorAll('.menu-item');
 
+  menu.forEach(function(item) {
     const url = window.location.href.split("/").pop().split(".")[0];
     let page = url.charAt(0).toUpperCase() + url.slice(1);
     if (page == 'Index' || window.location.href.split("/").pop() == '' || window.location.href.split("/").pop() == '<empty string>') page = 'Home';
 
-    menu.forEach(function(item) {
-      if (item.textContent == page) item.classList.add('current-menu-item');
-    });
+    if (item.textContent == page) item.classList.add('current-menu-item');
+  });
 
     Scrollbar.use(OverscrollPlugin);
     var scrollbar = Scrollbar.init(document.querySelector('#art-scroll-content'), {
