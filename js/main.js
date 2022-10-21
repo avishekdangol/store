@@ -167,7 +167,7 @@ $(function() {
   const options = {
     containers: ['#art-dynamic-content', '#art-dynamic-menu'],
     animateHistoryBrowsing: true,
-    linkSelector: '.art-menu a:not([data-no-swup]), .art-anima-link:not([data-no-swup])',
+    linkSelector: '.main-menu a:not([data-no-swup]), .art-anima-link:not([data-no-swup])',
     animationSelector: '[class="art-dynamic-content"]'
   };
 
