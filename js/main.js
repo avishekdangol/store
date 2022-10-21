@@ -488,7 +488,6 @@ $(function() {
   });
 
   $('.current-menu-item a').clone().prependTo('.art-current-page');
-  console.log($('.art-current-page'))
 
   anime({
     targets: '.art-follower',
