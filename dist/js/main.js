@@ -48,7 +48,7 @@ $(function() {
       $('.art-current-page')[0].style.display = 'none';
       setTimeout(() => {
         $('.art-current-page')[0].style.display = 'block';
-      }, 1000);
+      }, 2500);
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
     }
   });
@@ -96,10 +96,6 @@ $(function() {
       if(jQuery(e.target).closest(el).length) return;
       $('.art-menu-bar, .art-menu-bar-btn').removeClass('art-active');
     })
-  
-    // $('.menu-item').on('click', function() {
-    //   $('.art-menu-bar, .art-menu-bar-btn').removeClass('art-active');
-    // });
   
     $('.art-menu-btn').on('click', function() {
       $('.art-menu , .art-menu-bar-btn').toggleClass('art-active');
