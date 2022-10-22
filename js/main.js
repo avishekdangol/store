@@ -46,6 +46,10 @@ $(function() {
       $(this).children('.sub-menu').toggleClass('art-active');
     } else {
       $('.art-current-page')[0].style.display = 'none';
+      setTimeout(() => {
+        console.log('now')
+        $('.art-current-page')[0].style.display = 'block';
+      }, 500);
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
     }
   });
@@ -499,7 +503,6 @@ $(function() {
   });
 
   $('.current-menu-item a').clone().prependTo('.art-current-page');
-  $('.art-current-page')[0].style.display = 'block';
 
   anime({
     targets: '.art-follower',
@@ -821,7 +824,6 @@ $(function() {
     $.fancybox.defaults.hash = false;
 
     $('.current-menu-item a').clone().prependTo('.art-current-page');
-    $('.art-current-page')[0].style.display = 'block';
 
     // portfolio filter
     $('.art-filter a').on('click', function() {
