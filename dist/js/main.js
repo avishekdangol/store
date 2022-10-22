@@ -499,6 +499,7 @@ $(function() {
   });
 
   $('.current-menu-item a').clone().prependTo('.art-current-page');
+  $('.art-current-page')[0].style.display = 'block';
 
   anime({
     targets: '.art-follower',
@@ -820,6 +821,7 @@ $(function() {
     $.fancybox.defaults.hash = false;
 
     $('.current-menu-item a').clone().prependTo('.art-current-page');
+    $('.art-current-page')[0].style.display = 'block';
 
     // portfolio filter
     $('.art-filter a').on('click', function() {
