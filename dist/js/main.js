@@ -583,6 +583,7 @@ $(function() {
       if (page == 'Index' || window.location.href.split("/").pop() == '' || window.location.href.split("/").pop() == '<empty string>') page = 'Home';
 
       if (item.textContent == page) item.classList.add('current-menu-item');
+      console.log(page)
     });
 
     Scrollbar.use(OverscrollPlugin);
