@@ -585,9 +585,9 @@ $(function() {
 
   // reinit
   document.addEventListener("swup:contentReplaced", function() {
-    $('.current-menu-item').innerHTML = '';
-    console.log('using innerHTML')
-    console.log($('.current-menu-item').innerHTML)
+    $('.art-current-page').text = '';
+    console.log('changed selector')
+    console.log($('.art-current-page').innerHTML)
     const menu = document.querySelectorAll('.menu-item');
 
     menu.forEach(function(item) {
