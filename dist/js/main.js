@@ -45,7 +45,9 @@ $(function() {
     if ($(this).hasClass('menu-item-has-children')) {
       $(this).children('.sub-menu').toggleClass('art-active');
     } else {
+      $('.art-current-page').textContent = '';
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
+      console.log('click:' + $('.art-current-page'));
     }
   });
 
@@ -585,9 +587,6 @@ $(function() {
 
   // reinit
   document.addEventListener("swup:contentReplaced", function() {
-    $('.art-current-page').text = '';
-    console.log('changed selector')
-    console.log($('.art-current-page').innerHTML)
     const menu = document.querySelectorAll('.menu-item');
 
     menu.forEach(function(item) {
