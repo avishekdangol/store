@@ -45,9 +45,8 @@ $(function() {
     if ($(this).hasClass('menu-item-has-children')) {
       $(this).children('.sub-menu').toggleClass('art-active');
     } else {
-      $('.art-current-page').textContent = '';
+      $('.art-current-page').style.display = 'none';
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
-      console.log('click:' + $('.art-current-page'));
     }
   });
 
@@ -87,6 +86,7 @@ $(function() {
   "use strict";
 
   $(document).ready(function() {
+    $('.art-current-page').style.display = 'block';
     lang();
 
     $(document).on('click', function(e) {
