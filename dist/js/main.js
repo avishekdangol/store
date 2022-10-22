@@ -47,9 +47,8 @@ $(function() {
     } else {
       $('.art-current-page')[0].style.display = 'none';
       setTimeout(() => {
-        console.log('now')
         $('.art-current-page')[0].style.display = 'block';
-      }, 500);
+      }, 1000);
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
     }
   });
