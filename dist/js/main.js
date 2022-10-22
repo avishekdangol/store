@@ -86,7 +86,7 @@ $(function() {
   "use strict";
 
   $(document).ready(function() {
-    $('.art-current-page').style.display = 'block';
+    $('.art-current-page')[0].style.display = 'none';
     lang();
 
     $(document).on('click', function(e) {
