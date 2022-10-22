@@ -464,11 +464,14 @@ $(function() {
   });
 
   $(document).on('click', function(e) {
-    var el = '.art-menu-bar-btn, .art-menu-bar, .art-lang';
+    var el = '.art-menu-bar-btn, .art-menu-bar .art-lang';
     if(jQuery(e.target).closest(el).length) return;
     $('.art-menu-bar, .art-menu-bar-btn').removeClass('art-active');
-    console.log($('.art-menu-bar'))
   })
+
+  $('.menu-item').on('click', function() {
+    $('.art-menu-bar, .art-menu-bar-btn').removeClass('art-active');
+  });
 
   $('.art-menu-btn').on('click', function() {
     $('.art-menu , .art-menu-bar-btn').toggleClass('art-active');
