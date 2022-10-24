@@ -45,10 +45,6 @@ $(function() {
     if ($(this).hasClass('menu-item-has-children')) {
       $(this).children('.sub-menu').toggleClass('art-active');
     } else {
-      $('.art-current-page')[0].style.display = 'none';
-      setTimeout(() => {
-        $('.art-current-page')[0].style.display = 'block';
-      }, 2500);
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-info-bar-btn').removeClass('art-active , art-disabled');
     }
   });
