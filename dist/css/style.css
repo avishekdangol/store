@@ -2619,12 +2619,15 @@ portfolio
   align-items: center;
   color: rgb(40, 41, 44);
 }
+.art-work-item .art-btn {
+  padding: 8px 12px;
+}
 .art-work-item .art-work-cover-frame {
   height: 100%;
   display: block;
   position: relative;
   padding-bottom: 63%;
-  filter: brightness(90%);
+  /* filter: brightness(90%); */
   transition: 0.4s ease-in-out;
 }
 .art-work-item .art-work-cover-frame img {
@@ -2680,9 +2683,9 @@ portfolio
 .art-work-item .art-work-cover-frame .art-work-category span {
   margin-right: 10px;
 }
-.art-work-item .art-work-cover-frame:hover {
+/* .art-work-item .art-work-cover-frame:hover {
   filter: brightness(110%);
-}
+} */
 .art-work-item .art-work-cover-frame:hover .art-item-zoom {
   opacity: 1;
 }
