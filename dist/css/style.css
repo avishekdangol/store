@@ -1945,7 +1945,7 @@ content
   left: 0;
 }
 
-.art-member-about {
+.art-website-about {
   margin-bottom: 40px;
 }
 
@@ -1962,7 +1962,7 @@ content
   .art-page-cover .art-about-info, .art-page-cover .art-about-info.art-info-lg {
     width: 100%;
   }
-  .art-member-about .art-hint-frame {
+  .art-website-about .art-hint-frame {
     display: none;
   }
 }
@@ -1979,32 +1979,34 @@ content
 }
 
 /* ----- team ----- */
-.art-team-member {
+.art-popular-websites {
   position: relative;
   overflow: hidden;
   margin-bottom: 40px;
 }
-.art-team-member .art-team-item {
+.art-popular-websites .art-website-item {
   width: 100%;
   display: block;
   position: relative;
   padding-bottom: 105%;
-  filter: brightness(95%);
+  /* filter: brightness(95%); */
   transition: 0.4s ease-in-out;
 }
-.art-team-member .art-team-item img {
+.art-popular-websites .art-website-item img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
+  transition: object-position 0.5s ease;
 }
-.art-team-member .art-team-item:hover {
-  filter: brightness(105%);
+.art-popular-websites .art-website-item:hover img {
+  /* filter: brightness(105%); */
+  object-position: bottom;
 }
-.art-team-member .art-team-member-description {
+.art-popular-websites .art-popular-websites-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2013,7 +2015,10 @@ content
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   padding: 24px 20px;
 }
-.art-team-member .art-team-member-description .art-member-more {
+.art-popular-websites .art-popular-websites-description .art-website-name {
+  flex: 3;
+}
+.art-popular-websites .art-popular-websites-description .art-website-more {
   background-color: rgb(255, 213, 79);
   width: 35px;
   height: 35px;
