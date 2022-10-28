@@ -581,6 +581,7 @@ $(function() {
 
   // reinit
   document.addEventListener("swup:contentReplaced", function() {
+    lang();
     const menu = document.querySelectorAll('.menu-item');
 
     menu.forEach(function(item) {
